@@ -2,15 +2,20 @@ import React, { useState } from "react";
 import "./Home.css";
 import { Sidebar } from "../../components/Sidebar/Sidebar";
 import Feed from "../../components/Feed/Feed";
+import Recommended from "../../components/Recommended/Recommended";
 
-const Home = () => {
-  const [sidebar, setSidebar] = useState(true); // default sidebar visible
+const Home = ({ sidebar }) => {
+  const [category, setCategory] = useState(0);
 
   return (
     <div className="home">
-      <Sidebar sidebar={sidebar} />
+      <Sidebar
+        sidebar={sidebar}
+        category={category}
+        setCategory={setCategory}
+      />
       <div className={`container ${sidebar ? "" : "large-container"}`}>
-        <Feed />
+        <Feed category={category} />
       </div>
     </div>
   );
