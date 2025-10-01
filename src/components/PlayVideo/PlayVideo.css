@@ -1,0 +1,237 @@
+/* Main video container */
+.play-video {
+  flex-basis: 69%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.play-video video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.play-video h3 {
+  margin-top: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* Video info: Views, date, like/share/save buttons */
+.play-video-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+
+.play-video-info p {
+  margin: 0;
+}
+
+/* Buttons container */
+.play-video-info div {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px; /* space between each button */
+}
+
+/* Each button: icon + count below */
+.play-video-info div span {
+  display: flex;
+  flex-direction: column; /* icon above count */
+  align-items: center;
+  cursor: pointer;
+  font-size: 12px;
+  color: #5a5a5a;
+  transition: opacity 0.2s ease;
+}
+
+.play-video-info div span:hover {
+  opacity: 0.7;
+}
+
+.play-video-info div span img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  margin-bottom: 3px; /* gap between icon and count */
+}
+
+/* Horizontal line */
+.play-video hr {
+  border: none;
+  height: 1px;
+  background: #ccc;
+  margin: 10px 0;
+}
+
+/* Publisher section */
+.publisher {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.publisher img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.publisher div {
+  flex: 1;
+  line-height: 1.3;
+}
+
+.publisher div p {
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+}
+
+.publisher div span {
+  font-size: 13px;
+  color: #5a5a5a;
+}
+
+.publisher button {
+  background: #c00;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.publisher button:hover {
+  background: #a00;
+}
+
+/* Video Description */
+.vid-description {
+  margin-top: 20px;
+  padding-left: 10px;
+  line-height: 1.5;
+}
+
+.vid-description p {
+  font-size: 14px;
+  color: #5a5a5a;
+  margin: 5px 0;
+}
+
+.vid-description hr {
+  border: none;
+  height: 1px;
+  background: #ccc;
+  margin: 15px 0;
+}
+
+.vid-description h4 {
+  font-size: 14px;
+  color: #5a5a5a;
+  margin: 10px 0;
+}
+
+/* Comments */
+.comment {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0;
+  gap: 15px;
+}
+
+.comment img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.comment h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.comment h3 span {
+  font-size: 12px;
+  color: #5a5a5a;
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+.comment p {
+  margin: 5px 0;
+}
+
+/* Comment actions: Like / Dislike / Reply */
+.comment-action {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* space between actions */
+  margin-top: 5px;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+
+.comment-action span {
+  display: flex;
+  flex-direction: column; /* icon above count */
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+}
+
+.comment-action img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.comment-action p {
+  margin: 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Reply input (shown only when toggled) */
+.add-reply {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between avatar and input */
+  margin-top: 10px;
+}
+
+.add-reply img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.add-reply input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Optional: Show more / Show less for description */
+.vid-description .more-text {
+  display: none;
+}
+
+.vid-description .show-more {
+  color: #065fd4;
+  cursor: pointer;
+  font-size: 13px;
+  margin-top: 5px;
+  display: inline-block;
+}

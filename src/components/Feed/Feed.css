@@ -1,0 +1,52 @@
+/* Feed.css */
+
+.feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  grid-column-gap: 16px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  margin: 10px 12px 4px;
+  line-height: 1.4;
+}
+
+.card h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #606060;
+  margin: 0 12px 4px;
+}
+
+.card p {
+  font-size: 13px;
+  color: #909090;
+  margin: 0 12px 12px;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}

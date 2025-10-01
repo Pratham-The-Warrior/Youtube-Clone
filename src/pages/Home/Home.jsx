@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.css";
 import { Sidebar } from "../../components/Sidebar/Sidebar";
+import Feed from "../../components/Feed/Feed";
 
 const Home = () => {
+  const [sidebar, setSidebar] = useState(true); // default sidebar visible
+
   return (
-    <>
-      <Sidebar />
-    </>
+    <div className="home">
+      <Sidebar sidebar={sidebar} />
+      <div className={`container ${sidebar ? "" : "large-container"}`}>
+        <Feed />
+      </div>
+    </div>
   );
 };
 
