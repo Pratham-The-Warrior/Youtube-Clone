@@ -36,3 +36,5 @@ A YouTube-inspired platform built to practice **React** skills, with a focus on 
 
 ## 📂 Project Structure
 
+... in progress
+
